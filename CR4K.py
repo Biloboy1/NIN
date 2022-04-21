@@ -104,21 +104,21 @@ bd = random.randint(2e7, 3e7)
 sim = random.randint(2e4, 4e4)
 header = {'x-fb-connection-bandwidth': repr(bd), 'x-fb-sim-hni': repr(sim), 'x-fb-net-hni': repr(sim),'x-fb-connection-quality': 'EXCELLENT', 'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.3','x-fb-connection-type': 'unknown','content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
 
-# BANNER
-def banner():
-	clear()
-	print("""%s
+
+
 	
-  /$$$$$$  /$$   /$$  /$$$$$$   /$$$$$$  /$$$$$$$$ /$$$$$$$$ /$$$$$$$ 
- /$$__  $$| $$  | $$ /$$__  $$ /$$__  $$|__  $$__/| $$_____/| $$__  $$
-| $$  \__/| $$  | $$| $$  \ $$| $$  \__/   | $$   | $$      | $$  \ $$
-| $$ /$$$$| $$$$$$$$| $$  | $$|  $$$$$$    | $$   | $$$$$   | $$  | $$
-| $$|_  $$| $$__  $$| $$  | $$ \____  $$   | $$   | $$__/   | $$  | $$
-| $$  \ $$| $$  | $$| $$  | $$ /$$  \ $$   | $$   | $$      | $$  | $$
-|  $$$$$$/| $$  | $$|  $$$$$$/|  $$$$$$/   | $$   | $$$$$$$$| $$$$$$$/
- \______/ |__/  |__/ \______/  \______/    |__/   |________/|_______/ 
+	
+	
+  
+
+
+
+
+
+
+
  
-"""%(h))
+
 
 def xoshnaw():
   uuid = str(os.geteuid()) + str(os.getlogin())
@@ -141,7 +141,34 @@ def xoshnaw():
     if name == '__main__':
     	print(logo)
     	xoshnaw()
-xoshnaw()
+xoshnaw() 
+# BANNER
+
+def banner():
+
+	clear()	print("""%s
+
+	
+
+  /$$$$$$  /$$   /$$  /$$$$$$   /$$$$$$  /$$$$$$$$ /$$$$$$$$ /$$$$$$$ 
+
+ /$$__  $$| $$  | $$ /$$__  $$ /$$__  $$|__  $$__/| $$_____/| $$__  $$
+
+| $$  \__/| $$  | $$| $$  \ $$| $$  \__/   | $$   | $$      | $$  \ $$
+
+| $$ /$$$$| $$$$$$$$| $$  | $$|  $$$$$$    | $$   | $$$$$   | $$  | $$
+
+| $$|_  $$| $$__  $$| $$  | $$ \____  $$   | $$   | $$__/   | $$  | $$
+
+| $$  \ $$| $$  | $$| $$  | $$ /$$  \ $$   | $$   | $$      | $$  | $$
+
+|  $$$$$$/| $$  | $$|  $$$$$$/|  $$$$$$/   | $$   | $$$$$$$$| $$$$$$$/
+
+ \______/ |__/  |__/ \______/  \______/    |__/   |________/|_______/ 
+
+ 
+
+"""%(h))
 
 def version():
     os.system('clear');print(banner)
