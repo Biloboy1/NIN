@@ -146,7 +146,8 @@ xoshnaw()
 
 def banner():
 
-	clear()	print("""%s
+	clear()
+	print("""%s
 
 	
 
